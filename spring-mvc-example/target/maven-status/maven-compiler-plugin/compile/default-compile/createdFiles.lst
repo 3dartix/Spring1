@@ -1,0 +1,9 @@
+ru\geekbrains\controller\UserController.class
+ru\geekbrains\persist\enity\User.class
+ru\geekbrains\persist\repo\ProductRepository.class
+ru\geekbrains\AppConfig.class
+ru\geekbrains\persist\repo\UserRepository.class
+ru\geekbrains\WebInitializer.class
+ru\geekbrains\controller\ProductController.class
+ru\geekbrains\controller\WelcomeController.class
+ru\geekbrains\persist\enity\Product.class
