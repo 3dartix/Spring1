@@ -1,5 +1,6 @@
 package ru.geekbrains;
 
+import org.apache.log4j.BasicConfigurator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -26,6 +27,12 @@ public class AppConfig implements WebMvcConfigurer {
     @Autowired
     public void setContext(ApplicationContext context) {
         this.context = context;
+    }
+
+    //настройка логирования
+    @Bean
+    public void initLog4j(){
+        BasicConfigurator.configure();
     }
 
     @Override
