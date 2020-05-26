@@ -22,8 +22,8 @@
 
         <mapping class="ru.geekbrains.entities.User"></mapping>
         <mapping class="ru.geekbrains.entities.Product"></mapping>
-        <mapping class="ru.geekbrains.entities.Orders"></mapping>
-        <mapping class="ru.geekbrains.entities.SaleDetails"></mapping>
+        <mapping class="ru.geekbrains.entities.OrderItem"></mapping>
+        <mapping class="ru.geekbrains.entities.OrderItemID"></mapping>
 
     </session-factory>
 </hibernate-configuration>

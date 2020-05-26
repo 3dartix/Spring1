@@ -1,5 +1,7 @@
 package ru.geekbrains.entities;
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "user")
@@ -10,14 +12,32 @@ public class User {
     @Column(nullable = false)
     private String name;
 
-    @OneToOne(mappedBy = "user")
-    private Orders orders;
+    @ManyToMany (cascade=CascadeType.DETACH)
+    @JoinTable(
+            name = "products_users",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "product_id")
+    )
+    private List<Product> products = new ArrayList<>();
+
+    @OneToMany(
+            mappedBy = "user",
+            cascade = CascadeType.ALL,
+            orphanRemoval = true
+    )
+    private List<OrderItem> orderItems = new ArrayList<>();
 
     public User() {
     }
 
     public User(Long id, String name) {
         this.name = name;
+    }
+
+    public void addProduct(Product...productsArr) {
+        for (Product el:productsArr) {
+            products.add(el);
+        }
     }
 
     @Override
@@ -38,10 +58,16 @@ public class User {
     public void setName(String name) {
         this.name = name;
     }
-    public Orders getOrders() {
-        return orders;
+    public List<Product> getProducts() {
+        return products;
     }
-    public void setOrders(Orders orders) {
-        this.orders = orders;
+    public void setProducts(List<Product> products) {
+        this.products = products;
+    }
+    public List<OrderItem> getOrderItems() {
+        return orderItems;
+    }
+    public void setOrderItems(List<OrderItem> orderItems) {
+        this.orderItems = orderItems;
     }
 }

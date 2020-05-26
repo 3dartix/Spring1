@@ -1,6 +1,10 @@
 package ru.geekbrains.entities;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Table(name = "product")
 public class Product {
@@ -8,16 +12,27 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private float cost;
+    private BigDecimal cost;
 
-//    @ManyToOne (cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-//    @JoinColumn(name = "orderId")
-//    private Orders orderId;
+    @ManyToMany
+    @JoinTable(
+            name = "products_users",
+            joinColumns = @JoinColumn(name = "product_id"),
+            inverseJoinColumns = @JoinColumn(name = "user_id")
+    )
+    private List<User> users = new ArrayList<>();
+
+    @OneToMany(
+            mappedBy = "product",
+            cascade = CascadeType.ALL,
+            orphanRemoval = true
+    )
+    private List<OrderItem> orderItems = new ArrayList<>();
 
     public Product() {
     }
 
-    public Product(Long id, String name, float cost) {
+    public Product(Long id, String name, BigDecimal cost) {
         this.id = id;
         this.name = name;
         this.cost = cost;
@@ -41,16 +56,22 @@ public class Product {
     public void setName(String name) {
         this.name = name;
     }
-    public float getCost() {
+    public BigDecimal getCost() {
         return cost;
     }
-    public void setCost(float cost) {
+    public void setCost(BigDecimal cost) {
         this.cost = cost;
     }
-//    public Orders getOrder() {
-//        return orderId;
-//    }
-//    public void setOrder(Orders orderId) {
-//        this.orderId = orderId;
-//    }
+    public List<User> getUsers() {
+        return users;
+    }
+    public void setUsers(List<User> users) {
+        this.users = users;
+    }
+    public List<OrderItem> getOrderItems() {
+        return orderItems;
+    }
+    public void setOrderItems(List<OrderItem> orderItems) {
+        this.orderItems = orderItems;
+    }
 }
