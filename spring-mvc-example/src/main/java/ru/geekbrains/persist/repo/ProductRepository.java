@@ -1,37 +1,18 @@
 package ru.geekbrains.persist.repo;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import ru.geekbrains.persist.enity.Product;
+import ru.geekbrains.persist.entity.Product;
+import ru.geekbrains.persist.entity.User;
 
-import java.util.ArrayList;
+import java.math.BigDecimal;
 import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.atomic.AtomicLong;
 
+//А если нужна собственная реализация метода, то как ее написать правильно?
 @Repository
-public class ProductRepository {
-
-    private final AtomicLong identityGen;
-
-    private final Map<Long, Product> products;
-
-    public ProductRepository() {
-        this.identityGen = new AtomicLong(0);
-        this.products = new ConcurrentHashMap<>();
-    }
-
-    public List<Product> findAll() {
-        return new ArrayList<>(products.values());
-    }
-
-    public void save(Product product) {
-        long id = identityGen.incrementAndGet();
-        product.setId(id);
-        products.put(id, product);
-    }
-
-    public Product findById(long id) {
-        return products.get(id);
-    }
+public interface ProductRepository extends JpaRepository<Product, Long> {
+    Page<Product> findProductsByPriceBetween(BigDecimal minPrice, BigDecimal maxPrice, Pageable pageable);
+    List<Product> findProductsByOrderByPriceDesc();
 }

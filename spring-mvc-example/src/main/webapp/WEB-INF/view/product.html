@@ -44,7 +44,7 @@
         <div class="col-12">
 <!--            страница и объект из контроллера-->
             <form th:action="@{/product}" method="post" th:object="${product}">
-<!--                че это такое -->
+<!--                поле сформировывается автоматически hidden скрывает его-->
                 <input th:type="hidden" th:field="*{id}">
                 <div class="form-group">
                     <label for="name">Name</label>

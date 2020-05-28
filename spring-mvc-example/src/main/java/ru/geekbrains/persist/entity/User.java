@@ -1,11 +1,18 @@
-package ru.geekbrains.persist.enity;
+package ru.geekbrains.persist.entity;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "users")
 public class User {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(length = 32)
     private String name;
 
+    @Column(length = 32)
     private String password;
 
     public User() {
