@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="springmvcexample:war" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="67cde48f-5c15-4059-8b37-ce91fa3abcdd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/spring-mvc-example/src/main/java/ru/geekbrains/AppPersistConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc-example/src/main/java/ru/geekbrains/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc-example/src/main/java/ru/geekbrains/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.myChat/src/main/java/server/SpringContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/com.myChat/src/main/java/server/SpringContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.myChat/src/main/resources/spring-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/com.myChat/src/main/resources/spring-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.myChat/target/classes/META-INF/myChat.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.myChat/target/classes/spring-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/com.myChat/target/classes/spring-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc-example/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc-example/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc-example/src/main/java/ru/geekbrains/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc-example/src/main/java/ru/geekbrains/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc-example/src/main/java/ru/geekbrains/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc-example/src/main/java/ru/geekbrains/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc-example/src/main/java/ru/geekbrains/persist/enity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc-example/src/main/java/ru/geekbrains/persist/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc-example/src/main/java/ru/geekbrains/persist/enity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc-example/src/main/java/ru/geekbrains/persist/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc-example/src/main/java/ru/geekbrains/persist/repo/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc-example/src/main/java/ru/geekbrains/persist/repo/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc-example/src/main/java/ru/geekbrains/persist/repo/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc-example/src/main/java/ru/geekbrains/persist/repo/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc-example/src/main/webapp/WEB-INF/view/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc-example/src/main/webapp/WEB-INF/view/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc-example/src/main/webapp/WEB-INF/view/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc-example/src/main/webapp/WEB-INF/view/products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc-example/target/mvc-app/WEB-INF/view/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc-example/target/mvc-app/WEB-INF/view/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc-example/target/mvc-app/WEB-INF/view/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc-example/target/mvc-app/WEB-INF/view/products.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,17 +29,54 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="hibernate_lesson: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -34,27 +86,40 @@
     </option>
   </component>
   <component name="ProjectId" id="1bwcNtNHs4Azd4kpYkAV0Ihr3iM" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="server.beanFactory.player" />
-      <recent name="server" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JavaGeekBrains\Spring\spring1\git\com.myChat\src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\JavaGeekBrains\Spring\spring1\git\com.myChat\src\main\resources\logs" />
       <recent name="D:\JavaGeekBrains\Spring\spring1\git\com.myChat\src\main\resources" />
       <recent name="D:\JavaGeekBrains\Spring\spring1\git\com.myChat\src\main\java" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaGeekBrains\Spring\spring1\git\spring1\spring-mvc-example\src\main\java\ru\geekbrains" />
+      <recent name="D:\JavaGeekBrains\Spring\spring1\git\spring1\spring-mvc-example\src\main\webapp" />
+      <recent name="D:\JavaGeekBrains\Spring\spring1\git\spring1\spring-mvc-example\src\main\webapp\WEB-INF\view" />
+      <recent name="D:\JavaGeekBrains\Spring\spring1\git\com.myChat\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.geekbrains.controller" />
+      <recent name="ru.geekbrains" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="server.beanFactory.player" />
+      <recent name="server" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -69,7 +134,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ChatServerApplication">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.30">
     <configuration name="ChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="server.ChatServer" />
       <module name="myChat" />
@@ -83,12 +148,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChatServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ChatServerApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="server.ChatServerApplication" />
       <module name="com.myChat" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="server.beanFactory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.geekbrains.Main" />
+      <module name="hibernatelesson" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.geekbrains.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,6 +180,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="server.beanFactory.player.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.geekbrains.Main" />
+      <module name="hibernatelesson" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.geekbrains.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,15 +226,169 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Unnamed" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script" nameIsGenerated="true">
+      <module name="ru.geekbrains" />
+      <option name="filePath" value="" />
+      <option name="vmParameters" value="" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" value="" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" value="" />
+      <option name="vmParameters" value="" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" value="" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="spring-mvc-example[clean,install,c]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+                <option value="cargo:deploy" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/spring-mvc-example" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tomcat 9.0.30" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.30" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="springmvcexample:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/mvc-app-test" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_rugeekbrains" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="65375" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="springmvcexample:war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ChatServerApplication" />
+      <item itemvalue="Application.ChatServer" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.ServerStart" />
+      <item itemvalue="Application.TestBeanFactoryPostProc" />
+      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Kotlin script.Unnamed" />
+      <item itemvalue="Maven.spring-mvc-example[clean,install,c]" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.30" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ChatServerApplication" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.TestBeanFactoryPostProc" />
         <item itemvalue="Application.ChatServer" />
         <item itemvalue="Application.ServerStart" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -162,6 +407,21 @@
       <workItem from="1589792998396" duration="5872000" />
       <workItem from="1589834565494" duration="197000" />
       <workItem from="1589879912109" duration="191000" />
+      <workItem from="1589883802472" duration="1451000" />
+      <workItem from="1589890298223" duration="11221000" />
+      <workItem from="1589971155285" duration="11203000" />
+      <workItem from="1590044545448" duration="4763000" />
+      <workItem from="1590240197498" duration="6934000" />
+      <workItem from="1590255387155" duration="4056000" />
+      <workItem from="1590262894423" duration="7334000" />
+      <workItem from="1590303729187" duration="23930000" />
+      <workItem from="1590389435797" duration="11710000" />
+      <workItem from="1590433189922" duration="599000" />
+      <workItem from="1590494692582" duration="10148000" />
+      <workItem from="1590517122618" duration="4233000" />
+      <workItem from="1590570105720" duration="16384000" />
+      <workItem from="1590609935689" duration="4330000" />
+      <workItem from="1590650046092" duration="3037000" />
     </task>
     <servers />
   </component>
@@ -180,5 +440,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
