@@ -6,7 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="hibernatelesson" />
         <module name="com.myChat" />
+        <module name="springmvcexample" />
         <module name="myChat" />
       </profile>
     </annotationProcessing>
