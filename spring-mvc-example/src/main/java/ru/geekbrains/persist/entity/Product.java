@@ -1,6 +1,9 @@
 package ru.geekbrains.persist.entity;
 
+
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
 @Entity
@@ -10,19 +13,22 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotBlank(message = "Поле имя не может быть пустым")
     @Column(length = 150)
     private String name;
 
+    @NotBlank(message = "Поле описания не может быть пустым")
     @Column
     private String description;
 
+    @NotNull(message = "Поле c ценой не может быть пустым")
     @Column
-    private BigDecimal price;
+    private Float price;
 
     public Product() {
     }
 
-    public Product(Long id, String name, String description, BigDecimal price) {
+    public Product(Long id, String name, String description, Float price) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -50,10 +56,10 @@ public class Product {
         this.description = description;
     }
 
-    public BigDecimal getPrice() {
+    public Float getPrice() {
         return price;
     }
-    public void setPrice(BigDecimal price) {
+    public void setPrice(Float price) {
         this.price = price;
     }
 

@@ -45,20 +45,34 @@
 <!--            страница и объект из контроллера-->
             <form th:action="@{/product}" method="post" th:object="${product}">
 <!--                поле сформировывается автоматически hidden скрывает его-->
+<!--                th:if="${#fields.hasErrors('nameError')}" системная переменная позволяет вытягивать ошибки для полей-->
                 <input th:type="hidden" th:field="*{id}">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" th:field="*{name}" class="form-control"  placeholder="Enter name">
+<!--                    обработка ошибок-->
+                    <small id="nameError" class="from-text text-muted"
+                           th:if="${#fields.hasErrors('name')}"
+                    th:errors="*{name}">Validation error</small>
                 </div>
                 <div class="form-group">
                     <label for="description">Description</label>
                     <input type="text" id="description" th:field="*{description}" class="form-control"  placeholder="Enter description">
+<!--                    обработка ошибок-->
+                    <small id="nameError" class="from-text text-muted"
+                           th:if="${#fields.hasErrors('description')}"
+                           th:errors="*{description}">Validation error</small>
                 </div>
                 <div class="form-group">
                     <label for="price">Price</label>
                     <input type="number" id="price" th:field="*{price}" class="form-control" placeholder="Enter price">
+<!--                    обработка ошибок-->
+                    <small id="nameError" class="from-text text-muted"
+                           th:if="${#fields.hasErrors('price')}"
+                           th:errors="*{price}">Validation error</small>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
+                <a class="btn btn-primary" th:href="@{/product}">Cancel</a>
             </form>
         </div>
     </div>

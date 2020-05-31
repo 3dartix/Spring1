@@ -47,10 +47,13 @@
         <div class="col-12 mt-3">
             <form >
                 <label for="minPrice">Min price</label>
-                <input type="number" min="0" step="0.1" name="minPrice" id="minPrice" placeholder="Enter min price">
+                <input type="number" min="0" step="0.1" name="minPrice" id="minPrice" placeholder="Enter min price" th:value="${minPrice}">
 
                 <label for="maxPrice">Max price</label>
-                <input type="number" min="1"step="0.1" name="maxPrice" id="maxPrice" laceholder="Enter max price">
+                <input type="number" min="1"step="0.1" name="maxPrice" id="maxPrice" placeholder="Enter max price" th:value="${maxPrice}">
+
+                <label for="productName">Product name</label>
+                <input type="text" min="1"step="0.1" name="productName" id="productName" placeholder="Enter product name" th:value="${productName}">
 
                 <br>
                 <button type="submit" class="btn btn-primary mt-3">Update list</button>
@@ -69,31 +72,45 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr hidden>
+<!--             th:unless аналог not срабатывает, если условие false-->
+                <tr th:unless="${productsPage.hasContent()}">
                     <td class="text-center" colspan="5">No data</td>
                 </tr>
-                <tr th:each="product : ${products}">
+                <tr th:if="${productsPage.hasContent()}" th:each="product : ${productsPage.getContent()}">
                     <th scope="row" th:text="${product.id}">1</th>
                     <td th:text="${product.name}">Macbook pro 2015</td>
                     <td th:text="${product.description}">Apple laptop</td>
                     <td th:text="${product.price}">$2000</td>
                     <td>
-                        <a class="btn btn-success" href="#"><i class="fas fa-edit"></i></a>
-                        <a class="btn btn-danger" href="#"><i class="far fa-trash-alt"></i></a>
+                        <a class="btn btn-success" th:href="@{/product/edit(idProduct=${product.id})}"><i class="fas fa-edit"></i></a>
+                        <a class="btn btn-danger" th:href="@{/product/delete(idProduct=${product.id})}"><i class="far fa-trash-alt"></i></a>
                     </td>
                 </tr>
                 </tbody>
             </table>
         </div>
 
-        <div class="col-12">
+        <div class="col-12" th:if="${productsPage.hasContent()}">
             <nav aria-label="Page navigation example">
                 <ul class="pagination mt-3">
-                    <li class="page-item"><a class="page-link" th:href="@{/product/next}">Previous</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+<!--                    /product() передаем параметры-->
+                    <li class="page-item"
+                        th:classappend="${!productsPage.hasPrevious()} ? 'disabled'">
+                        <a class="page-link"
+                           th:href="@{/product(page=${currentPage - 1}, pageSize=${productsPage.getSize()}, minPrice=${minPrice}, maxPrice=${maxPrice})}">Previous</a></li>
+<!--#numbers.sequence(1, productsPage.totalPages()) позволяет сгенерировать последовательность-->
+<!-- ${num == productsPage.getNumber() + 1} ? 'active'" добавляем класс если открыта текущая страница-->
+                    <li class="page-item"
+                        th:each="num: ${#numbers.sequence(1, productsPage.getTotalPages())}"
+                        th:classappend="${num == productsPage.getNumber() + 1} ? 'active'">
+                        <a class="page-link"
+                           th:text="${num}"
+                        th:href="@{/product(page=${num}, pageSize=${productsPage.getSize()}, minPrice=${minPrice}, maxPrice=${maxPrice})}"> 1 </a>
+
+                    <li class="page-item" th:classappend="${!productsPage.hasNext()} ? 'disabled'">
+                        <a class="page-link"
+                           th:href="@{/product(page=${currentPage + 1}, pageSize=${productsPage.getSize()}, minPrice=${minPrice}, maxPrice=${maxPrice})}">Next</a>
+                    </li>
                 </ul>
             </nav>
 
