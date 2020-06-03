@@ -8,6 +8,7 @@
         <module>com.myChat</module>
         <module>spring-mvc-example</module>
         <module>hibernate-lesson</module>
+        <module>spring-boot-lesson</module>
     </modules>
 
     <groupId>geek-spring-lessons-part-one</groupId>

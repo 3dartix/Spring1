@@ -7,15 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67cde48f-5c15-4059-8b37-ce91fa3abcdd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/controller/WelcomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/persist/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/persist/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/persist/repo/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/persist/repo/ProductSpecification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/persist/repo/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/resources/static/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/resources/templates/product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/resources/templates/products.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/resources/templates/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/resources/templates/users.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/resources/templates/welcome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-example/src/main/java/ru/geekbrains/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc-example/src/main/java/ru/geekbrains/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-example/src/main/java/ru/geekbrains/persist/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc-example/src/main/java/ru/geekbrains/persist/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-example/src/main/java/ru/geekbrains/persist/repo/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc-example/src/main/java/ru/geekbrains/persist/repo/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-example/src/main/java/ru/geekbrains/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc-example/src/main/java/ru/geekbrains/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-example/src/main/webapp/WEB-INF/view/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc-example/src/main/webapp/WEB-INF/view/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-example/src/main/webapp/WEB-INF/view/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc-example/src/main/webapp/WEB-INF/view/products.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-example/target/mvc-app/WEB-INF/view/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc-example/target/mvc-app/WEB-INF/view/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc-example/target/mvc-app/WEB-INF/view/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc-example/target/mvc-app/WEB-INF/view/products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,34 +98,40 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\JavaGeekBrains\Spring\spring1\git\com.myChat\src\main\resources\logs" />
-      <recent name="D:\JavaGeekBrains\Spring\spring1\git\com.myChat\src\main\resources" />
-      <recent name="D:\JavaGeekBrains\Spring\spring1\git\com.myChat\src\main\java" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="server.beanFactory.player" />
+      <recent name="server" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaGeekBrains\Spring\spring1\git\spring1\spring-boot-lesson\src\main\java\ru\geekbrains\springbootlesson" />
+      <recent name="D:\JavaGeekBrains\Spring\spring1\git\spring1\spring-boot-lesson\src\main\resources\static" />
+      <recent name="D:\JavaGeekBrains\Spring\spring1\git\spring1\spring-boot-lesson\src\main\resources\templates" />
       <recent name="D:\JavaGeekBrains\Spring\spring1\git\spring1\spring-mvc-example\src\main\java\ru\geekbrains" />
       <recent name="D:\JavaGeekBrains\Spring\spring1\git\spring1\spring-mvc-example\src\main\webapp" />
-      <recent name="D:\JavaGeekBrains\Spring\spring1\git\spring1\spring-mvc-example\src\main\webapp\WEB-INF\view" />
-      <recent name="D:\JavaGeekBrains\Spring\spring1\git\com.myChat\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ru.geekbrains.controller" />
       <recent name="ru.geekbrains" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="server.beanFactory.player" />
-      <recent name="server" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaGeekBrains\Spring\spring1\git\spring1" />
+      <recent name="D:\JavaGeekBrains\Spring\spring1\git\com.myChat\src\main\resources\logs" />
+      <recent name="D:\JavaGeekBrains\Spring\spring1\git\com.myChat\src\main\resources" />
+      <recent name="D:\JavaGeekBrains\Spring\spring1\git\com.myChat\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -128,7 +146,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.30">
+  <component name="RunManager" selected="Spring Boot.SpringBootLessonApplication">
     <configuration name="ChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="server.ChatServer" />
       <module name="myChat" />
@@ -220,6 +238,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="spring-boot-lesson" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script" nameIsGenerated="true">
       <module name="ru.geekbrains" />
       <option name="filePath" value="" />
@@ -242,6 +273,40 @@
       <option name="programParameters" value="" />
       <option name="passParentEnvs" value="true" />
       <option name="workingDirectory" value="" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="spring-boot-lesson" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
       <option name="isAlternativeJrePathEnabled" value="false" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -280,6 +345,13 @@
         </option>
       </MavenSettings>
       <method v="2" />
+    </configuration>
+    <configuration name="SpringBootLessonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-lesson (1) (ru.geekbrains)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.geekbrains.springbootlesson.SpringBootLessonApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Tomcat 9.0.30" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.30" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/mvc-app-test/product" />
@@ -363,6 +435,7 @@
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Kotlin script.Unnamed" />
       <item itemvalue="Maven.spring-mvc-example[clean,install,c]" />
+      <item itemvalue="Spring Boot.SpringBootLessonApplication" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.30" />
     </list>
     <recent_temporary>
@@ -421,6 +494,7 @@
       <workItem from="1590740113438" duration="6606000" />
       <workItem from="1590847502043" duration="16139000" />
       <workItem from="1590910333718" duration="7690000" />
+      <workItem from="1591196272795" duration="6066000" />
     </task>
     <servers />
   </component>
