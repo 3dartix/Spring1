@@ -6,9 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="com.myChat" />
         <module name="myChat" />
+        <module name="spring-boot-lesson (1) (ru.geekbrains)" />
+        <module name="spring-mvc-example" />
+        <module name="hibernatelesson" />
+        <module name="hibernate-lesson" />
+        <module name="springmvcexample" />
+        <module name="com.myChat" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hibernatelesson" target="1.8" />
+      <module name="ru.geekbrains" target="1.8" />
+      <module name="springmvcexample" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-boot-lesson (1) (ru.geekbrains)" options="-parameters" />
+    </option>
   </component>
 </project>
