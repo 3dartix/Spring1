@@ -7,27 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67cde48f-5c15-4059-8b37-ce91fa3abcdd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/controller/WelcomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/persist/entity/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/persist/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/persist/repo/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/persist/repo/ProductSpecification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/persist/repo/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/resources/static/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/resources/templates/product.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/resources/templates/products.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/resources/templates/user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/resources/templates/users.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/resources/templates/welcome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/requests.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/exception/EntityExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/exception/ErrorMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/exception/NotFondException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/rest/ProductResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-lesson/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-lesson/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-lesson/src/main/java/ru/geekbrains/springbootlesson/service/ProductService.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,9 +100,11 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="server.beanFactory.player" />
-      <recent name="server" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaGeekBrains\Spring\spring1\git\spring1" />
+      <recent name="D:\JavaGeekBrains\Spring\spring1\git\com.myChat\src\main\resources\logs" />
+      <recent name="D:\JavaGeekBrains\Spring\spring1\git\com.myChat\src\main\resources" />
+      <recent name="D:\JavaGeekBrains\Spring\spring1\git\com.myChat\src\main\java" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JavaGeekBrains\Spring\spring1\git\spring1\spring-boot-lesson\src\main\java\ru\geekbrains\springbootlesson" />
@@ -127,12 +117,111 @@
       <recent name="ru.geekbrains.controller" />
       <recent name="ru.geekbrains" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\JavaGeekBrains\Spring\spring1\git\spring1" />
-      <recent name="D:\JavaGeekBrains\Spring\spring1\git\com.myChat\src\main\resources\logs" />
-      <recent name="D:\JavaGeekBrains\Spring\spring1\git\com.myChat\src\main\resources" />
-      <recent name="D:\JavaGeekBrains\Spring\spring1\git\com.myChat\src\main\java" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.geekbrains.springbootlesson.rest" />
+      <recent name="server.beanFactory.player" />
+      <recent name="server" />
     </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/mvc-app/api/v1/product/all" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:8080/mvc-app/api/v1/product/16/id" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080/mvc-app/api/v1/product" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;    &quot;id&quot;: 2,&#10;    &quot;name&quot;: &quot;Product2&quot;,&#10;    &quot;description&quot;: &quot;short description&quot;,&#10;    &quot;price&quot;: 13.0&#10;  }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080/mvc-app/api/v1/product" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;    &quot;id&quot;: 2,&#10;    &quot;name&quot;: &quot;Product2&quot;,&#10;    &quot;description&quot;: &quot;short description&quot;,&#10;    &quot;price&quot;: 12.0&#10;  }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/mvc-app/api/v1/product" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Product23&quot;,&#10;  &quot;description&quot;: &quot;short description&quot;,&#10;  &quot;price&quot;: 25.0&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/mvc-app/api/v1/product" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Product22&quot;,&#10;  &quot;description&quot;: &quot;short description&quot;,&#10;  &quot;price&quot;: 22.0&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/mvc-app/api/v1/product" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;id&quot;: 22,&#10;  &quot;name&quot;: &quot;Product22&quot;,&#10;  &quot;description&quot;: &quot;short description&quot;,&#10;  &quot;price&quot;: 22.0&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -146,20 +235,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringBootLessonApplication">
-    <configuration name="ChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="server.ChatServer" />
-      <module name="myChat" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="server.beanFactory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="HTTP Request.requests#1">
     <configuration name="ChatServerApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="server.ChatServerApplication" />
       <module name="com.myChat" />
@@ -187,19 +263,6 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="server.beanFactory.player.Main" />
-      <module name="myChat" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="server.beanFactory.player.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.geekbrains.Main" />
       <module name="hibernatelesson" />
       <extension name="coverage">
@@ -212,31 +275,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServerStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Server.ServerStart" />
-      <module name="myChat" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="server.beanFactory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="requests#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/spring-boot-lesson/requests.http">
+      <method v="2" />
     </configuration>
-    <configuration name="TestBeanFactoryPostProc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="server.beanFactory.TestBeanFactoryPostProc" />
-      <module name="myChat" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="server.beanFactory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="requests#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/spring-boot-lesson/requests.http" index="2">
+      <method v="2" />
+    </configuration>
+    <configuration name="requests#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/spring-boot-lesson/requests.http" index="3">
+      <method v="2" />
+    </configuration>
+    <configuration name="requests#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/spring-boot-lesson/requests.http" index="4">
+      <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="spring-boot-lesson" />
@@ -428,23 +477,23 @@
     </configuration>
     <list>
       <item itemvalue="Application.ChatServerApplication" />
-      <item itemvalue="Application.ChatServer" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.ServerStart" />
-      <item itemvalue="Application.TestBeanFactoryPostProc" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Kotlin script.Unnamed" />
       <item itemvalue="Maven.spring-mvc-example[clean,install,c]" />
       <item itemvalue="Spring Boot.SpringBootLessonApplication" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.30" />
+      <item itemvalue="HTTP Request.requests#1" />
+      <item itemvalue="HTTP Request.requests#2" />
+      <item itemvalue="HTTP Request.requests#3" />
+      <item itemvalue="HTTP Request.requests#4" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.requests#1" />
+        <item itemvalue="HTTP Request.requests#4" />
+        <item itemvalue="HTTP Request.requests#3" />
+        <item itemvalue="HTTP Request.requests#2" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.TestBeanFactoryPostProc" />
-        <item itemvalue="Application.ChatServer" />
-        <item itemvalue="Application.ServerStart" />
       </list>
     </recent_temporary>
   </component>
@@ -494,7 +543,9 @@
       <workItem from="1590740113438" duration="6606000" />
       <workItem from="1590847502043" duration="16139000" />
       <workItem from="1590910333718" duration="7690000" />
-      <workItem from="1591196272795" duration="6066000" />
+      <workItem from="1591196272795" duration="6645000" />
+      <workItem from="1591356080857" duration="596000" />
+      <workItem from="1591470434649" duration="13562000" />
     </task>
     <servers />
   </component>

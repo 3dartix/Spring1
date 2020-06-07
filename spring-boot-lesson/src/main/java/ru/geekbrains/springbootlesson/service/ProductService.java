@@ -13,6 +13,7 @@ import ru.geekbrains.springbootlesson.persist.repo.ProductRepository;
 import ru.geekbrains.springbootlesson.persist.repo.ProductSpecification;
 
 import java.math.BigDecimal;
+import java.util.List;
 import java.util.Optional;
 
 // для описания бизнес логики
@@ -55,42 +56,11 @@ public class ProductService {
         }
 
         return repository.findAll(specification, pageable);
+    }
 
-
-//        if(productName != "") {
-//
-//            if(minPrice == null && maxPrice == null) {
-//                logger.info("Сработал блок 1");
-//                return repository.findProductsByName(productName, pageable);
-//            }
-//
-//            if(null == minPrice) {
-//                minPrice = new BigDecimal(0);
-//            }
-//
-//            if(null == maxPrice) {
-//                maxPrice = new BigDecimal(999999);
-//            }
-//            logger.info("Сработал блок 2");
-//            return repository.findProductsByNameAndPrice(productName,minPrice, maxPrice, pageable);
-//
-//        } else {
-//
-//            if(null == minPrice && null != maxPrice) {
-//                //если первое значение нулл, а второе число
-//                return repository.findByPriceLessThanEqual(maxPrice, pageable);
-//            }
-//            if (null != minPrice && null == maxPrice) {
-//                //если перво значение число, а второе null
-//                return repository.findByPriceGreaterThanEqual(minPrice, pageable);
-//            }
-//            if (null == minPrice) {
-//                //если оба значения null
-//                return repository.findAll(pageable);
-//            }
-//            //если оба значения не null
-//            return repository.findProductsByPriceBetween(minPrice, maxPrice, pageable);
-//        }
+    @Transactional(readOnly = true)
+    public List<Product> findAll (){
+        return repository.findAll();
     }
 
     @Transactional(readOnly = true)
