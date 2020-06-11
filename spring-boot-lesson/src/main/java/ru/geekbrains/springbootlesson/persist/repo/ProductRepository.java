@@ -13,6 +13,7 @@ import ru.geekbrains.springbootlesson.persist.entity.User;
 import java.math.BigDecimal;
 
 //А если нужна собственная реализация метода, то как ее написать правильно?
+// JpaSpecificationExecutor<Product> - для Specification<Product> формирование запроса в зависимости от параметров
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Long>, JpaSpecificationExecutor<Product> {
     Page<Product> findProductsByPriceBetween(BigDecimal minPrice, BigDecimal maxPrice, Pageable pageable);

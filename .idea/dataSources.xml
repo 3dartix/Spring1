@@ -11,5 +11,11 @@ D:/JavaGeekBrains/Spring/spring1/git/spring1/hibernate-lesson/src/main/resources
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/hibernate_lesson?createDatabaseIfNotExist=true&amp;useUnicode=true&amp;serverTimezone=UTC</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="spring_mvc_db@localhost" uuid="2c6c757f-43af-4a1a-aa2a-c2e96bfe790d">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/spring_mvc_db?createDatabaseIfNotExist=true&amp;allowPublicKeyRetrieval=true&amp;useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC</jdbc-url>
+    </data-source>
   </component>
 </project>

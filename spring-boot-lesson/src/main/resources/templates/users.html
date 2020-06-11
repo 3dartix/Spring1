@@ -1,7 +1,8 @@
 <!doctype html>
 <!--xmlns:th="http://www.thymeleaf.org" - импорт библиотеки -->
 <!--дает возможность использовать специальные тэги-->
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
 <head>
     <!-- Required meta tags -->
@@ -35,7 +36,7 @@
             </li>
         </ul>
 
-        <form class="form-inline my-2 my-lg-0" action="#" method="post">
+        <form class="form-inline my-2 my-lg-0" th:action="@{/logout}" method="post">
             <button class="btn btn-outline-success my-2 my-sm-0">Logout</button>
         </form>
     </div>
@@ -43,7 +44,7 @@
 
 <div class="container">
     <div class="row py-2">
-        <div class="col-12">
+        <div class="col-12" sec:authorize="hasRole('SUPERADMIN')">
 <!--            {/user/new} get запрос по текущему адресу-->
             <a class="btn btn-primary" th:href="@{/user/new}">Add User</a>
         </div>
@@ -67,8 +68,8 @@
                     <th scope="row" th:text="${user.id}">1</th>
                     <td th:text="${user.name}">Alex</td>
                     <td>
-                        <a class="btn btn-success" href="#"><i class="fas fa-edit"></i></a>
-                        <a class="btn btn-danger" href="#"><i class="far fa-trash-alt"></i></a>
+                        <a class="btn btn-success"  th:href="@{/user/edit(id=${user.id})}" sec:authorize="hasRole('SUPERADMIN')"><i class="fas fa-edit"></i></a>
+                        <a class="btn btn-danger" href="#" sec:authorize="hasRole('SUPERADMIN')"><i class="far fa-trash-alt"></i></a>
                     </td>
                 </tr>
                 </tbody>
